@@ -69,13 +69,7 @@ def run():
     if add_selectbox == 'Batch':
 
         ## adding a file uploader button for the user to upload the csv file containing data points
-        #file_upload = st.file_uploader("Upload csv file for predictions", type=["csv"])
-
-        file_upload = st.file_uploader("Choose your database", accept_multiple_files=False)
-        if file_upload is not None:
-            file_name = file_upload
-        else:
-            file_name = "data_unseen.csv"
+        file_upload = st.file_uploader("Upload csv file for predictions", type=["csv"])
 
         ## block of code to be run once a csv file is uplloaded by the user
         if file_upload is not None:
