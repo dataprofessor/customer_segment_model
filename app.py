@@ -5,7 +5,7 @@ import pandas as pd
 from PIL import Image
 
 ## loading the kmeans model
-model = load_model('Final Kmeans Model')
+model = load_model('Final_Kmeans_Model')
 
 ## defining a function to make predictions
 def predict(model, input_df):
